@@ -7,8 +7,11 @@ struct person
 };
 int main()
 {
-    struct person person[3];
-    for (int i = 0; i < 3; i++)
+    int n;
+    printf("How many persons you want to add: ");
+    scanf("%d", &n);
+    struct person person[n];
+    for (int i = 0; i < n; i++)
     {
         printf("Enter information of person%d: \n", i + 1);
         printf("Enter name: ");
@@ -18,7 +21,7 @@ int main()
         printf("Enter salary: ");
         scanf("%f", &person[i].salary);
     }
-    for (int i = 0; i < 3; i++)
+    for (int i = 0; i < n; i++)
     {
         printf("Information of person%d: \n", i + 1);
         printf("Name: %s\n", person[i].name);
