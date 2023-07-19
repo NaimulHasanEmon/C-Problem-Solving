@@ -1,9 +1,9 @@
 #include <stdio.h>
 void swap(int *ptrA, int *ptrB)
 {
-    int *temp = ptrA;
-    ptrA = ptrB;
-    ptrB = temp;
+    int temp = *ptrA;
+    *ptrA = *ptrB;
+    *ptrB = temp;
     printf("After swapping a = %d, b = %d\n", *ptrA, *ptrB);
 }
 int main()
