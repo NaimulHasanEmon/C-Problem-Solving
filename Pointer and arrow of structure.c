@@ -16,6 +16,7 @@ int main()
     struct Student *ptr;
     ptr = &s1;
     printf("Address of s1 = %x\n", ptr);
-    printf("Roll of s1 with pointer = %d\n", (*ptr).roll);
+    printf("Name of s1 with pointer = %s\n", (*ptr).name);
+    printf("Roll of s1 with arrow = %d\n", ptr->roll);
     return 0;
 }
