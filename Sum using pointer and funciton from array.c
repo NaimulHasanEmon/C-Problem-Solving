@@ -5,7 +5,7 @@ void sum(int *ptr, int sum, int n)
     {
         sum += *(ptr + i);
     }
-    printf("%d\n", sum);
+    printf("Sum = %d\n", sum);
 }
 int main()
 {
