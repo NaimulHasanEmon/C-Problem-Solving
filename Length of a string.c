@@ -11,6 +11,6 @@ int main()
         count++;
         i++;
     }
-    printf("The length of the given string \"Welcome\" is %d\n", count);
+    printf("The length of the given string \"%s\" is %d\n", str, count);
     return 0;
 }
