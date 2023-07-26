@@ -11,6 +11,6 @@ int main()
         else
             b = b - a;
     }
-    printf("GCD = %d\n", b);
+    printf("GCD = %d\n", a);
     return 0;
 }
