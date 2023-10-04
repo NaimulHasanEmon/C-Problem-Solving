@@ -1,30 +1,8 @@
 #include <stdio.h>
 int main()
 {
-    int ch[10] = {1, 21, 14, 19, 37, 9, 41, 65, 83, 70}, i, j, temp;
+    int ch[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}, i, j, temp;
     printf("The array is: {");
-    for (i = 0; i < 10; i++)
-    {
-        printf("%d", ch[i]);
-        if (i < 9)
-        {
-            printf(", ");
-        }
-    }
-    printf("}\n");
-    for (i = 0; i < 10; i++)
-    {
-        for (j = i + 1; j < 10; j++)
-        {
-            if (ch[i] > ch[j])
-            {
-                temp = ch[i];
-                ch[i] = ch[j];
-                ch[j] = temp;
-            }
-        }
-    }
-    printf("The sorted array is: {");
     for (i = 0; i < 10; i++)
     {
         printf("%d", ch[i]);
